@@ -3,6 +3,7 @@ using System.IO;
 using System.Reflection;
 using UnityEngine;
 using UnityEditor;
+using UnityEditor.Android;
 using UnityEditorInternal;
 
 namespace UnityDebugViewer
@@ -298,7 +299,7 @@ namespace UnityDebugViewer
 
 #if UNITY_2019_1_OR_NEWER
             ADB adb = ADB.GetInstance();
-            if(abd != null)
+            if(adb != null)
             {
                 adbPath = adb.GetADBPath();
             }
